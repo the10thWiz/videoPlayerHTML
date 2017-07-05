@@ -1,0 +1,48 @@
+@font-face {
+   font-family: 'HeydingsControlsRegular';
+   src: url('fonts/heydings_controls-webfont.eot');
+   src: url('fonts/heydings_controls-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/heydings_controls-webfont.woff') format('woff'),
+        url('fonts/heydings_controls-webfont.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+#selection{
+	position: absolute;
+	width: 100%;
+	height: 99%;
+	left: 0px;
+	right: 0px;
+	padding: 0px;
+	display: block;
+}
+.title {
+	position: relative;
+	background-color: white;
+	padding: 10px;
+	margin: 10px;
+	border: solid 2px black;
+	color: black;
+	text-align: center;
+	font-family: courier new, monospace;
+	font-size: calc(10vh);
+	transition: all 1s;
+}
+/* Delete following rule when using touch-screen */
+.title:hover {
+	cursor: pointer;
+	background-color: lightblue;
+}
+#vidwrap {
+	position: absolute;
+	display: none;
+}
+
+button:before {
+  font-family: HeydingsControlsRegular;
+  font-size: 20px;
+  position: relative;
+  content: attr(data-icon);
+  color: #aaa;
+  text-shadow: 1px 1px 0px black;
+}
